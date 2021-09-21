@@ -12,7 +12,12 @@ const config: Phaser.Types.Core.GameConfig = {
 			gravity: { y: 200 }
 		}
 	},
-	scene: [HelloWorldScene]
+	scene: [HelloWorldScene],
+	scale: {
+		mode: Phaser.Scale.FIT,
+		autoCenter: Phaser.Scale.Center.CENTER_BOTH
+	},
+	render: { pixelArt: true }
 }
 
 export default new Phaser.Game(config)
